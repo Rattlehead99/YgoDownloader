@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 namespace YgoDownloader
 {
     public class Program
-    {
+    {   //https://www.formatlibrary.com/api/decks/?filter=type:eq:Blackwing&limit=1000&page=1 <- Get deck by Type instead of Number url.
         public static async Task Main(string[] args)
         {
             var deckNumber = Console.ReadLine();
@@ -21,8 +21,9 @@ namespace YgoDownloader
                 }
                 else
                 {
-                    Console.WriteLine(String.Concat(deck.Builder, "-", deck.Type, "-", deckNumber) ?? deckNumber);
-                    Console.WriteLine(deck.Ydk);
+                    //Console.WriteLine(String.Concat(deck.Builder, "-", deck.Type, "-", deckNumber) ?? deckNumber);
+                    //Console.WriteLine(deck.Ydk);
+                    Console.WriteLine("Deck Downloaded!");
                 }
                 deckNumber = Console.ReadLine();
             }
@@ -66,6 +67,7 @@ namespace YgoDownloader
             deck = JsonSerializer.Deserialize<Deck>(deckJson, new JsonSerializerOptions()
             {
                 PropertyNameCaseInsensitive = true,
+                TypeInfoResolver = TrimContext.Default
             });
 
             deck.Ydk = deck.Ydk.Replace($"created", "");
