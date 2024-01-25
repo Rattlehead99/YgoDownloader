@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YgoDownloader", "YgoDownloader\YgoDownloader.csproj", "{1723A395-9ECC-4329-B441-7D3B8E56F672}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1723A395-9ECC-4329-B441-7D3B8E56F672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1723A395-9ECC-4329-B441-7D3B8E56F672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1723A395-9ECC-4329-B441-7D3B8E56F672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1723A395-9ECC-4329-B441-7D3B8E56F672}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8804AC57-9B89-48D6-80DB-56FA02DD9329}
+	EndGlobalSection
+EndGlobal
